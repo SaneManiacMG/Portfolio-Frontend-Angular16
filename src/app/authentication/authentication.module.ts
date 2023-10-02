@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthenticationComponent } from './authentication.component';
 
 const routes : Routes = [
   { path: 'login', component: LoginComponent },
@@ -11,7 +12,7 @@ const routes : Routes = [
 ]
 
 @NgModule({
-  declarations: [LoginComponent, RegistrationComponent],
+  declarations: [LoginComponent, RegistrationComponent, AuthenticationComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
 export class AuthenticationModule {}
