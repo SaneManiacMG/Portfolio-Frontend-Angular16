@@ -5,11 +5,13 @@ import { RegistrationComponent } from './registration/registration.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthenticationComponent } from './authentication.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 const routes: Routes = [
   { path: 'authentication', component: AuthenticationComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegistrationComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: '', redirectTo: 'authentication', pathMatch: 'full' },
 ];
 
@@ -18,6 +20,7 @@ const routes: Routes = [
     LoginComponent,
     RegistrationComponent,
     AuthenticationComponent,
+    ForgotPasswordComponent,
   ],
   imports: [
     CommonModule,
