@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* styles.css */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+div.container {
+  border: black 1px solid;
+  padding: 10px;
+}
+
+/* other styles */

@@ -1,0 +1,8 @@
+div.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: 100%;
+}

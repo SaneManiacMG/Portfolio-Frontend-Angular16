@@ -1,1 +1,22 @@
-<p>authentication works!</p>
+<div class="container">
+    <div class="tabs">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" [class.active]="activeTab === 'login'" (click)="switchToTab('login')">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [class.active]="activeTab === 'register'"
+                    (click)="switchToTab('register')">Registration</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane" [class.active]="activeTab === 'login'">
+                <app-login></app-login>
+            </div>
+            <div class="tab-pane" [class.active]="activeTab === 'register'">
+                <app-registration></app-registration>
+            </div>
+        </div>
+    </div>
+</div>
