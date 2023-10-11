@@ -5,14 +5,13 @@ import { RegistrationComponent } from './registration/registration.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthenticationComponent } from './authentication.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { PasswordResetComponent } from './password-reset/password-reset.component';
 
 const routes: Routes = [
   { path: 'authentication', component: AuthenticationComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegistrationComponent },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'reset-password', component: PasswordResetComponent },
   { path: '', redirectTo: 'authentication', pathMatch: 'full' },
 ];
 
@@ -21,7 +20,6 @@ const routes: Routes = [
     LoginComponent,
     RegistrationComponent,
     AuthenticationComponent,
-    ForgotPasswordComponent,
     PasswordResetComponent,
   ],
   imports: [
