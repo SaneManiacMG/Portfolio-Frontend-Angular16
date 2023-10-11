@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthenticationComponent } from './authentication.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { PasswordResetComponent } from './password-reset/password-reset.component';
 
 const routes: Routes = [
   { path: 'authentication', component: AuthenticationComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
     RegistrationComponent,
     AuthenticationComponent,
     ForgotPasswordComponent,
+    PasswordResetComponent,
   ],
   imports: [
     CommonModule,
