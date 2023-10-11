@@ -4,9 +4,4 @@
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-div.container {
-  border: black 1px solid;
-  padding: 10px;
-}
-
 /* other styles */
