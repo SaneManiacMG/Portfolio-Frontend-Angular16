@@ -1,24 +1,24 @@
 <div class="container">
-    <form class="form-group">
+    <form class="form-group" [formGroup]="registerForm" (ngSubmit)="registerUser()">
         <div>
             <label for="firstname">First Name:</label>
-            <input type="text" class="form-control" id="firstname">
+            <input type="text" class="form-control" formControlName="firstName">
         </div>
         <div>
             <label for="lastname">Last Name:</label>
-            <input type="text" class="form-control" id="lastname">
+            <input type="text" class="form-control" formControlName="lastName">
         </div>
         <div>
             <label for="username">Username:</label>
-            <input type="text" class="form-control" id="username">
+            <input type="text" class="form-control" formControlName="username">
         </div>
         <div>
             <label for="email">Email:</label>
-            <input type="text" class="form-control" id="email">
+            <input type="text" class="form-control" formControlName="email">
         </div>
         <div>
             <label for="phoneNumber" class="form-label">Phone Number:</label>
-            <input type="number" class="form-control" id="phoneNumber">
+            <input type="text" class="form-control" formControlName="phoneNumber">
         </div>
         <pre></pre>
         <div class="btn-container">
