@@ -7,6 +7,8 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
+  constructor() {}
+
   loginForm = new FormGroup({
     userId: new FormControl(''),
     password: new FormControl(''),
